@@ -54,6 +54,7 @@ const data = {
     },
     projectsSection: {
       title: "Projects",
+      compimage:"bos-ekran.png",
       items: [
         {
           id: 1,
@@ -62,7 +63,7 @@ const data = {
           technologies: ["React", "Vercel", "Axios", "Router"],
           githubLink: "View on GitHub",
           demoLink: "Go to app =>",
-          image: "random-jokes-project.jpg"
+          image: "proje-1.png"
         },
         {
           id: 2,
@@ -71,7 +72,7 @@ const data = {
           technologies: ["React", "Redux", "Axios", "Router", "Vercel"],
           githubLink: "View on GitHub",
           demoLink: "Go to app =>",
-          image: "bored-project.jpg"
+          image: "proje-2.png"
         }
       ]
     },
@@ -132,6 +133,7 @@ const data = {
     },
     projectsSection: {
       title: "Projeler",
+      compimage:"bos-ekran.png",
       items: [
         {
           id: 1,

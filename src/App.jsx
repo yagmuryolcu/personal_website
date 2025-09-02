@@ -7,6 +7,8 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from "./contexts/LanguageContext";
 import data from "./data.js";
 import ProfileSection from './components/ProfileSection';
+import ProjectsSection from './components/ProjectsSection';
+
 
 
 function App() {
@@ -20,7 +22,7 @@ function App() {
         <HeroSection />
         <SkillsSection />
         <ProfileSection/>
-
+        <ProjectsSection/>
                 </div>
 
       </LanguageProvider>
