@@ -1,11 +1,11 @@
 export default {
   darkMode: 'class',
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-   theme: {
+  theme: {
     extend: {
       colors: {
-        primary: '#f472b6',   // Örnek renk
-        secondary: '#fcd34d',
+        mainLight: '#F4F4F4',
+        mainDark: '#2A262B',
       },
     },
   },

@@ -3,8 +3,20 @@ import { createContext, useContext, useEffect, useState } from "react";
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  // Direkt light mod default
   const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme(prev => {
+      const newTheme = prev === "light" ? "dark" : "light";
+      localStorage.setItem("theme", newTheme);
+      return newTheme;
+    });
+  };
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+  }, []);
 
   useEffect(() => {
     if (theme === "dark") {
@@ -12,10 +24,8 @@ export function ThemeProvider({ children }) {
     } else {
       document.documentElement.classList.remove("dark");
     }
+    console.log("Theme değişti:", theme);
   }, [theme]);
-
-  const toggleTheme = () =>
-    setTheme(prev => (prev === "light" ? "dark" : "light"));
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
