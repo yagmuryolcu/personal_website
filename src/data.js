@@ -16,33 +16,40 @@ const data = {
           link: "https://www.github.com"
         }
       ],
-      ctaHTML: "Currently <strong>Freelancing</strong> for <strong>UX, UI & Web Design</strong> Project. Invite me to join your team => <strong>pratamaiosi@gmail.com</strong>"
-    },
+    cta: {
+      beforeFreelancing: "Currently ",
+      freelancing: "Freelancing",
+      betweenText: " for ",
+      services: "UX, UI & Web Design",
+      afterServices: " Project. Invite me to join your team → ",
+      email: "pratamaiosi@gmail.com"
+    }    },
     skillsSection: {
       title: "Skills",
       skills: [
         { name: "JAVASCRIPT", icon: "js-logo-.jpg" },
-        { name: "REACT", icon: "react-logo-png" },
+        { name: "REACT", icon: "react.logo.jpg" },
         { name: "REDUX", icon: "redux-logo-.png" },
-        { name: "NODE", icon: "node-logo-.png" },
+        { name: "NODE", icon: "node-logo-.jpg" },
         { name: "VS CODE", icon: "vs-logo-.png" },
-        { name: "FIGMA", icon: "figma-logo-.png" }
+        { name: "FIGMA", icon: "figma-logo-.jpg" }
       ]
     },
     profileSection: {
       title: "Profile",
       basicInfo: {
         title: "Basic Information",
-        details: {
-          birthDate: "24.03.1996",
-          address: "Ankara",
-          educationStatus: "Hacettepe Uni Biology License, 2016",
-          preferredRole: "Frontend, UI"
-        }
+        fields: [
+          { label: "Birth Date", value: "24.03.1996" },
+          { label: "Address", value: "Ankara" },
+          { label: "Education Status", value: "Hacettepe Uni Biology License, 2016" },
+          { label: "Preferred Role", value: "Frontend, UI" }
+        ]
+      
       },
       aboutMe: {
-        title: "ABOUT ME",
-        description: "Lorem ipsum, dolor sit amet consectetur adipiscing elit..."
+        title: "About me",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aut odit laborum, aliquam voluptatum nisi mollitia.Minima accusamus ratione soluta aperiam sit voluptate. Dicta quod deserunt, quam temporibus cumque magnam!"
       }
     },
     projectsSection: {
@@ -88,33 +95,39 @@ const data = {
         { logo: "logo-linkedin.png", alt_text: "linkedin", link: "https://www.linkedin.com" },
         { logo: "logo-github.png", alt_text: "github", link: "https://www.github.com" }
       ],
-      ctaHTML: "Şu anda <strong>UX, UI & Web Tasarım</strong> projeleri için <strong>Freelancer</strong> olarak çalışıyorum. Ekibinize katılmam için beni davet edin => <strong>pratamaiosi@gmail.com</strong>"
-    },
+    cta: {
+      beforeFreelancing: "Şu anda ",
+      freelancing: "Freelancer",
+      betweenText: " olarak ",
+      services: "UX, UI & Web Tasarım",
+      afterServices: " projeleri için çalışıyorum. Ekibinize katılmam için beni davet edin → ",
+      email: "pratamaiosi@gmail.com"
+    }    },
     skillsSection: {
       title: "Beceriler",
-      skills: [
-         { name: "JAVASCRIPT", icon: "js-logo-.jpg" },
-        { name: "REACT", icon: "react-logo-png" },
+     skills: [
+        { name: "JAVASCRIPT", icon: "js-logo-.jpg" },
+        { name: "REACT", icon: "react.logo.jpg" },
         { name: "REDUX", icon: "redux-logo-.png" },
-        { name: "NODE", icon: "node-logo-.png" },
+        { name: "NODE", icon: "node-logo-.jpg" },
         { name: "VS CODE", icon: "vs-logo-.png" },
-        { name: "FIGMA", icon: "figma-logo-.png" }
+        { name: "FIGMA", icon: "figma-logo-.jpg" }
       ]
     },
-    profileSection: {
-      title: "Profil",
+       profileSection: {
+      title: "Profil", 
       basicInfo: {
         title: "Temel Bilgiler",
-        details: {
-          birthDate: "24.03.1996",
-          address: "Ankara",
-          educationStatus: "Hacettepe Üni Biyoloji Lisans, 2016",
-          preferredRole: "Frontend, UI"
-        }
+        fields: [
+          { label: "Doğum Tarihi", value: "24.03.1996" },
+          { label: "İkamet Şehri", value: "Ankara" },
+          { label: "Eğitim Durumu", value: "Hacettepe Üni Biyoloji Lisans, 2016" },
+          { label: "Tercih Ettiği Rol", value: "Frontend, UI" }
+        ]
       },
       aboutMe: {
-        title: "HAKKIMDA",
-        description: "Lorem ipsum, dolor sit amet consectetur adipiscing elit..."
+        title: "Hakkımda",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aut odit laborum, aliquam voluptatum nisi mollitia.Minima accusamus ratione soluta aperiam sit voluptate. Dicta quod deserunt, quam temporibus cumque magnam!"
       }
     },
     projectsSection: {

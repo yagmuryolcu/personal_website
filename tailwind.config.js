@@ -7,6 +7,10 @@ export default {
         mainLight: '#F4F4F4',
         mainDark: '#2A262B',
       },
+      fontFamily: {
+        inter: ['Inter'], 
+        playfair: ['Playfair Display'],
+      },
     },
   },
   plugins: [],

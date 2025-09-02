@@ -2,9 +2,11 @@ import './App.css';
 import React, { useState } from "react";
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import SkillsSection from './components/SkillsSection';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from "./contexts/LanguageContext";
 import data from "./data.js";
+import ProfileSection from './components/ProfileSection';
 
 
 function App() {
@@ -16,6 +18,9 @@ function App() {
 
         <Header />
         <HeroSection />
+        <SkillsSection />
+        <ProfileSection/>
+
                 </div>
 
       </LanguageProvider>
