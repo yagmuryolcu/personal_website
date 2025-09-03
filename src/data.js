@@ -59,19 +59,24 @@ const data = {
         {
           id: 1,
           title: "Random Jokes",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          technologies: ["React", "Vercel", "Axios", "Router"],
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veliam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          technologies: ["react", "vercel", "axios", "router"],
           githubLink: "View on GitHub",
-          demoLink: "Go to app =>",
+          githubUrl: "https://github.com/yagmuryolcu",
+          appUrl:"https://www.figma.com",
+          demoLink: "Go to app ⟶ ",
           image: "proje-1.png"
         },
         {
           id: 2,
           title: "Are you bored?",
-          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
-          technologies: ["React", "Redux", "Axios", "Router", "Vercel"],
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veliam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dita quod deserunt quam temporibus cumque magnam!",
+          technologies: ["react", "redux", "axios", "router", "vercel"],
           githubLink: "View on GitHub",
-          demoLink: "Go to app =>",
+          githubUrl: "https://github.com/yagmuryolcu",
+          demoLink: "Go to app ⟶ ",      
+           appUrl:"https://www.figma.com",
+
           image: "proje-2.png"
         }
       ]
@@ -80,8 +85,8 @@ const data = {
       title: "Let's work together on your next product.",
       socialLinks: [
         { name: "Github", url: "https://github.com/yagmuryolcu", type: "social" },
-        { name: "Personal Blog", url: "https://blog.example.com", type: "blog" },
-        { name: "Linkedin", url: "https://linkedin.com/in/username", type: "social" },
+        { name: "Personal Blog", url: "https://www.figma.com", type: "blog" },
+        { name: "Linkedin", url: "https://www.linkedin.com/in/ya%C4%9Fmur-sude-yolcu-a229722b9/", type: "social" },
         { name: "Email", url: "mailto:pratamaiosi@gmail.com", type: "contact" }
       ]
     }
@@ -138,19 +143,24 @@ const data = {
         {
           id: 1,
           title: "Rastgele Şakalar",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          technologies: ["React", "Vercel", "Axios", "Router"],
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veliam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          technologies: ["react", "vercel", "axios", "router"],
           githubLink: "GitHub'da Görüntüle",
-          demoLink: "Uygulamaya git =>",
+          githubUrl: "https://github.com/yagmuryolcu",
+          demoLink: "Uygulamaya git ⟶ ",
+          appUrl:"https://www.figma.com",
           image: "proje-1.png"
         },
         {
           id: 2,
           title: "Sıkıldın mı?",
-          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit...",
-          technologies: ["React", "Redux", "Axios", "Router", "Vercel"],
+          description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veliam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dita quod deserunt quam temporibus cumque magnam!",
+          technologies: ["react", "redux", "axios", "router", "vercel"],
           githubLink: "GitHub'da Görüntüle",
-          demoLink: "Uygulamaya git =>",
+          githubUrl: "https://github.com/yagmuryolcu",
+          demoLink: "Uygulamaya git ⟶ ",
+          appUrl:"https://www.figma.com",
+
           image: "proje-2.png"
         }
       ]
@@ -159,8 +169,8 @@ const data = {
       title: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
       socialLinks: [
         { name: "Github", url: "https://github.com/yagmuryolcu", type: "social" },
-        { name: "Kişisel Blog", url: "https://blog.example.com", type: "blog" },
-        { name: "Linkedin", url: "https://linkedin.com/in/username", type: "social" },
+        { name: "Kişisel Blog", url: "https://www.figma.com", type: "blog" },
+        { name: "Linkedin", url: "https://www.linkedin.com/in/ya%C4%9Fmur-sude-yolcu-a229722b9/", type: "social" },
         { name: "Email", url: "mailto:pratamaiosi@gmail.com", type: "contact" }
       ]
     }

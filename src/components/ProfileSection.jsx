@@ -34,6 +34,7 @@ const ProfileSection = () => {
       style={{ backgroundColor: bgColor, color: textColor }}
     >
        
+       
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Title */}
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
