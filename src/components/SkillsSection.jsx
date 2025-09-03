@@ -22,7 +22,7 @@ const SkillsSection = () => {
 
   return (
     <section 
-      className="py-16 px-8 transition-all duration-300 relative"
+      className="py-16 px-8 transition-all duration-300 relative overflow-hidden"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
         <div
@@ -33,9 +33,9 @@ const SkillsSection = () => {
   }}
 ></div>
  
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl mb-20">
         {/* Başlık kısmı */}
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
+        <h2 className="text-4xl lg:text-5xl font-medium font-inter text-center mb-18">
           {skillsData.title}
         </h2>
                       {/*  her skill için kart oluşturdum*/}
@@ -64,7 +64,7 @@ const SkillsSection = () => {
               
               {/* Skill Name */}
               <span 
-                className="text-sm lg:text-base font-medium text-center"
+                className="text-sm lg:text-base font-medium text-center break-words"
                 style={{ color: textColor }}
               >
                 {skill.name}
@@ -75,8 +75,15 @@ const SkillsSection = () => {
       </div>
         {/* sol alttaki şekil */}
       <div
-        className="absolute bottom-5 -left-12 w-30 h-10 rounded-3xl "
+        className="absolute bottom-14 -left-12 w-32 h-12 rounded-3xl "
         style={{ backgroundColor: "#525252" }}
+      ></div>
+      <div 
+      className="absolute -bottom-16 -right-17 w-32 h-32 rounded-full border-18"
+        style={{ 
+          borderColor: "#E91E63",
+          backgroundColor: "transparent"
+        }}
       ></div>
     </section>
   );

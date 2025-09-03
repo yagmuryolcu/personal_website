@@ -24,14 +24,14 @@ export default function ProjectsSection() {
 
   return (
     <section
-      className="py-16 transition-colors duration-500"
+      className="py-16 transition-colors duration-500 relative overflow-hidden "
       style={{ backgroundColor: sectionBgColor, color: textColor }}
     >
-      <div className="px-16">
-        <h2 className="text-center text-3xl font-bold mb-10" style={{ color: textColor }}>
+      <div className="px-16  ">
+        <h2 className="text-center  font-medium font-inter text-5xl font-bold mb-10" style={{ color: textColor }}>
           {projectsSection.title}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-8 max-w-5xl mx-auto items-stretch">
           {projectsSection.items.map((project, index) => (
             <div
               key={project.id}
@@ -68,7 +68,7 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* Link kısmı */}
-                <div className="flex justify-between text-xl font-semibold mb-6">
+                <div className="flex justify-between text-xl font-semibold mb-6  md:mb-6 md:text-xl">
                   <a 
                     href={project.githubUrl} 
                     target="_blank" 
@@ -91,7 +91,7 @@ export default function ProjectsSection() {
               </div>
 
               {/* Laptop Görseli */}
-              <div className="relative -mb-16 -mx-8 mt-2">
+              <div className="relative -mb-8 md:-mb-16 -mx-4 md:-mx-8 mt-2">
                 <img
                   src={new URL(`../assets/${projectsSection.compimage}`, import.meta.url).href}
                   alt="Computer mockup"

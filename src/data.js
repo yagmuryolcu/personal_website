@@ -49,8 +49,10 @@ const data = {
       },
       aboutMe: {
         title: "About me",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aut odit laborum, aliquam voluptatum nisi mollitia.Minima accusamus ratione soluta aperiam sit voluptate. Dicta quod deserunt, quam temporibus cumque magnam!"
-      }
+            paragraphs: [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aut odit laborum, aliquam voluptatum nisi mollitia. ",
+          "Minima accusamus ratione soluta aperiam sit voluptate.Dicta quod deserunt, quam temporibus cumque magnam!"
+        ]}
     },
     projectsSection: {
       title: "Projects",
@@ -133,8 +135,10 @@ const data = {
       },
       aboutMe: {
         title: "Hakkımda",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aut odit laborum, aliquam voluptatum nisi mollitia.Minima accusamus ratione soluta aperiam sit voluptate. Dicta quod deserunt, quam temporibus cumque magnam!"
-      }
+         paragraphs: [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aut odit laborum, aliquam voluptatum nisi mollitia. ",
+          "Minima accusamus ratione soluta aperiam sit voluptate.Dicta quod deserunt, quam temporibus cumque magnam!"
+        ]}
     },
     projectsSection: {
       title: "Projeler",

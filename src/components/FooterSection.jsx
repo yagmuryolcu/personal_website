@@ -17,25 +17,25 @@ export default function Footerection() {
     linkedin: theme === "dark" ? "#0077B5" : "#419CCB",
     email: theme === "dark" ? "#AF0C48" : "#EA2678",
   };
-
-   return (
+  
+  return (
     <section
-      className="py-16 px-6 md:px-12 transition-colors duration-500 font-inter"
+      className="py-8 md:py-16 px-4 md:px-6 lg:px-12 transition-colors duration-500 font-inter"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
       <div className="flex justify-center">
-        <div className="max-w-4xl w-full flex  ml-55 flex-col md:flex-row justify-between items-center gap-12">
-
+        <div className="max-w-4xl w-full flex ml-0 md:ml-55 flex-col md:flex-row justify-between items-center gap-8 md:gap-12 break-words">
+          
           {/* Başlık ve dekoratif kutu */}
           <div className="relative md:w-1/2 flex flex-col items-center md:items-start">
             {/* Başlık */}
-            <h2 className="text-3xl md:text-4xl font-medium text-center md:text-left relative z-10">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-center md:text-left relative z-10">
               {cta.title}
             </h2>
 
-            {/* Mavi dekoratif şekil title’ın altında */}
+            {/* Mavi dekoratif şekil title'ın altında */}
             <div
-              className="absolute mb-1 mt-7 ml-25 w-55 h-4 rounded-xl"
+              className="absolute mb-1 mt-4 md:mt-7 ml-0 md:ml-25 w-32 md:w-55 h-3 md:h-4 rounded-xl"
               style={{ backgroundColor: "#82BBFF", zIndex: 0 }}
             ></div>
           </div>
@@ -56,7 +56,7 @@ export default function Footerection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color }}
-                  className="transition-colors hover:underline font-medium"
+                  className="transition-colors text-lg md:text-xl hover:underline font-inter font-medium"
                 >
                   {link.name}
                 </a>

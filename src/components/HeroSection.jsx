@@ -13,36 +13,36 @@ const HeroSection = () => {
 return (
     <section
       style={{ backgroundColor: bgColor, color: textColor }}
-      className="relative flex flex-col items-center justify-center min-h-[85vh] p-8 transition-all duration-300 overflow-visible"
+      className="relative flex flex-col items-center justify-center min-h-[85vh] p-8 transition-all duration-300 overflow-hidden"
     >
       {/* Dekoratif Şekilleri tanımlandırdım*/}
       
       
       {/* Sağ alt - pembe kısım */}
   <div
-  className="absolute bottom-40  -right-12 w-40 h-12 rounded-3xl "
+  className="absolute bottom-40 -right-12 w-40 h-12 rounded-3xl hidden md:block"
   style={{ backgroundColor: "#EA2678" }}
 ></div>
   
       <div className="container mx-auto px-6 py-12 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-16 max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-16 max-w-6xl mx-auto">
           
           {/* Sol taraf - Text Content */}
           <div className="flex-1 max-w-2xl space-y-6">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl leading-tight tracking-tight font-thin">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl leading-tight tracking-tight font-thin font-inter">
               {heroData.greeting}
             </h1>
             
             <div className="relative">
       <p 
-        className="text-2xl -top-4 lg:text-3xl xl:text-4xl font-medium leading-relaxed font-medium relative z-10"
+        className="text-2xl -top-4 lg:text-3xl xl:text-4xl leading-relaxed font-medium font-inter relative z-10"
         style={{ color: textColor}}
       >
         {heroData.intro}
       </p>
 
       <div 
-      className="absolute top-5  -left-3 w-32 h-8 rounded-lg "
+      className="absolute top-5 -left-3 w-32 h-8 rounded-lg"
       style={{ backgroundColor: "#E91E63" }}
     ></div>
     </div>
@@ -62,7 +62,7 @@ return (
             {heroData.cta.afterServices}
             <a 
               href={`mailto:${heroData.cta.email}`}
-              className="font-thin  hover:underline transition-all duration-300"
+              className="font-thin hover:underline transition-all duration-300"
               style={{ color: "#E91E63" }}
             >
               {heroData.cta.email}
@@ -71,14 +71,14 @@ return (
         </div>
             
             {/* Sosyal Medya İkonları */}
-            <div className="flex gap-5 pt-6">
+            <div className="flex gap-3 pt-6">
               {heroData.socials.map((s, i) => (
                 <a 
                   key={i} 
                   href={s.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-13 h-13 flex items-center justify-center rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                  className="w-15 h-15 flex items-center justify-center rounded-xl transition-all duration-300 hover:scale-110 hover:shadow-lg"
                   style={{ 
                     color: theme === "dark" ? "#FFFFFF": "#3A3A3A" ,
                   }}
@@ -94,23 +94,21 @@ return (
           </div>
 
           {/* Sağ taraf - Profile Image */}
-          <div className="flex-1 flex  -top-5  -left-20 justify-center lg:justify-end relative">
+          <div className="flex-1 flex justify-center lg:justify-end relative lg:-top-5 lg:-left-20">
             
             {/* Profil resmi arkasındaki dekoratif şekiller */}
             <div className="relative">
               {/* Ana pembe background shape */}
               <div 
-                className="absolute -top-5 -left-5 w-72 h-80 rounded-3xl  "
+                className="absolute -top-2 md:-top-5 -left-2 md:-left-5 w-48 md:w-72 h-56 md:h-80 rounded-3xl"
                 style={{ backgroundColor: "#E91E63" }}
               ></div>
-              
-          
               
               {/* Profile Image */}
               <img
                 src={new URL(`../assets/${heroData.profileImage}`, import.meta.url).href}
                 alt="profile"
-                className="relative   -top-1 -bottom-2 z-10 w-72 h-80 object-cover rounded-3xl shadow-2xl transform transition-transform duration-300"
+                className="relative -top-1 -bottom-2 z-10 w-48 md:w-72 h-56 md:h-80 object-cover rounded-3xl shadow-2xl transform transition-transform duration-300"
                 style={{
                   boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
                 }}
@@ -122,7 +120,7 @@ return (
         </div>
       </div>
         <div
-      className="absolute -bottom-16 right-55 w-32 h-32 rounded-full border-18"
+      className="absolute -bottom-16 right-55 w-32 h-32 rounded-full border-18 hidden md:block"
       style={{ 
       
         borderColor:  theme === "dark" ? "#525252" : "#D9D9D9",

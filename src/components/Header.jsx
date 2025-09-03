@@ -14,16 +14,16 @@ const Header = () => {
       style={{ backgroundColor: bgColor, color: textColor }}
       className="p-4 transition-colors duration-300 "
     >
-        <div
-  className="absolute -top-15 left-1/2 -translate-x-[140%] w-30 h-30 rounded-full  overflow-visible"
-  style={{
-    backgroundColor: theme === "dark" ? "#525252" : "#D9D9D9",
-  }}
+    <div   
+  className="absolute -top-15 left-1/2 -translate-x-[140%] w-30 h-30 rounded-full overflow-visible hidden md:block"   
+  style={{     
+    backgroundColor: theme === "dark" ? "#525252" : "#D9D9D9",   
+  }} 
 ></div>
-
       <div className="flex justify-end items-center gap-6">
         {/* Dark/Light Mode Toggle */}
         <ThemeToggle />
+          <span className="text-gray-700">|</span>
 
         {/* Dil değiştirme butonu */}
         <button
@@ -36,7 +36,7 @@ const Header = () => {
                 style={{
                   color: "#EA2678",
                   fontFamily: 'Inter',
-                  fontWeight: "600"
+                  fontWeight: "700"
                 }}
               >
                 TÜRKÇE
