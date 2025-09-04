@@ -1,11 +1,13 @@
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
-import data from "../data.js";
+import { usePortfolioData } from "../hooks/usePortfolioData";
 
 export default function Footerection() {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  const cta = data[language].ctaSection;
+   const { data } = usePortfolioData();
+
+  const cta = data[language].ctaSection; 
 
   const bgColor = theme === "dark" ? "#484148" : "#FFFFFF";
   const textColor = theme === "dark" ? "#FFFFFF" : "#000000";

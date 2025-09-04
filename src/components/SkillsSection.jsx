@@ -1,11 +1,12 @@
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
-import data from '../data.js';
+import { usePortfolioData } from "../hooks/usePortfolioData";
 
 const SkillsSection = () => {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  const skillsData = data[language].skillsSection;
+  const { data } = usePortfolioData();
+const skillsData = data?.[language]?.skillsSection;
 
   const bgColor = theme === "dark" ? "#484148" : "#FFFFFF";
   const textColor = theme === "dark" ? "white" : "black";
@@ -25,11 +26,16 @@ const SkillsSection = () => {
       className="py-16 px-8 transition-all duration-300 relative overflow-hidden"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
-        <div
-  className="absolute -top-16 right-55 w-32 h-32 rounded-full border-18 "
-  style={{ 
-     borderColor:  theme === "dark" ? "#525252" : "#D9D9D9",
-    borderTopColor: "transparent"
+        
+<div
+  className="absolute -top-16 right-55 w-32 h-32 rounded-full "
+  style={{
+    borderTopColor: theme === "dark" ? "#525252" : "#D9D9D9",
+    borderRightColor: theme === "dark" ? "#525252" : "#D9D9D9",
+    borderLeftColor: theme === "dark" ? "#525252" : "#D9D9D9",
+    borderBottomColor: theme === "dark" ? "#525252" : "#D9D9D9",
+    borderWidth: "18px",
+    borderStyle: "solid",
   }}
 ></div>
  

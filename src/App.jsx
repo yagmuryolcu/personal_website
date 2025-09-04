@@ -13,6 +13,7 @@ import { ToastContainer } from 'react-toastify';
 
 
 
+
 function App() {
   return (
    <>
@@ -30,7 +31,7 @@ function App() {
           pauseOnHover
         />
                 <div className=" relative min-h-screen bg-primary dark:bg-black text-black dark:text-white">
-
+        
         <Header />
         <HeroSection />
         <SkillsSection />

@@ -1,12 +1,14 @@
 import React from 'react';
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
-import data from '../data.js';
+import { usePortfolioData } from "../hooks/usePortfolioData";
 
 const ProfileSection = () => {
   const { theme } = useTheme();
   const { language } = useLanguage();
-  const profileData = data[language].profileSection;
+  const { data } = usePortfolioData();
+  const profileData = data?.[language]?.profileSection;
+  
 
   const bgColor = theme === "dark" ? "#2A262B" : "#F4F4F4";
   const textColor = theme === "dark" ? "white" : "black";
@@ -106,11 +108,11 @@ const ProfileSection = () => {
                   {profileData.aboutMe.title}
                 </h3>
               </div>
-              <div className="space-y-4 max-w-2xl font-inter font-normal">
+              <div className="space-y-5 font-inter  font-normal">
                 {profileData.aboutMe.paragraphs.map((paragraph, index) => (
                   <p
                     key={index}
-                    className="leading-relaxed text-base text-left"
+                    className="leading-relaxed text-[18px] text-left"
                     style={{ color: theme === "dark" ? "#D9D9D9" : "#000000" }}
                   >
                     {paragraph}

@@ -1,10 +1,12 @@
 import { useTheme } from "../contexts/ThemeContext";
 import { useLanguage } from "../contexts/LanguageContext";
-import data from '../data.js';
+import { usePortfolioData } from "../hooks/usePortfolioData";
 
 const HeroSection = () => {
   const { theme } = useTheme();
   const { language } = useLanguage();   
+    const { data } = usePortfolioData();
+
   const heroData = data[language].heroSection; 
 
   const bgColor = theme === "dark" ? "#2A262B" : "#F4F4F4";
@@ -62,7 +64,7 @@ return (
             {heroData.cta.afterServices}
             <a 
               href={`mailto:${heroData.cta.email}`}
-              className="font-thin hover:underline transition-all duration-300"
+              className="font-thin underline transition-all duration-300"
               style={{ color: "#E91E63" }}
             >
               {heroData.cta.email}
@@ -124,7 +126,8 @@ return (
       style={{ 
       
         borderColor:  theme === "dark" ? "#525252" : "#D9D9D9",
-        borderBottomColor: "transparent"
+        borderBottomColor: "transparent",
+        
       }}
     ></div>
     </section>

@@ -1,11 +1,14 @@
-import data from "../data.js";
+import { usePortfolioData } from "../hooks/usePortfolioData";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useTheme } from "../contexts/ThemeContext";
 
 export default function ProjectsSection() {
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const { projectsSection } = data[language];
+  const { data } = usePortfolioData();
+const projectsSection = data?.[language]?.projectsSection;
+
+  
 
   const getProjectBg = (index) => {
     if (theme === "dark") {
@@ -52,11 +55,11 @@ export default function ProjectsSection() {
                 </p>
                 
                 {/* Teknoloji Etiketleri */}
-                <div className="flex flex-wrap gap-3 mb-10 mt-8 justify-start " style={{ maxWidth: '280px' }}>
+                <div className="flex flex-wrap gap-3 mb-10 mt-8 justify-start font-playfair " style={{ maxWidth: '280px' }}>
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-5 py-2 rounded-full font-playfair font-bold text-l tracking-[0.05em] transition-colors inline-block whitespace-nowrap"
+                      className="px-5 py-2 rounded-full font-playfair font-bold text-[16px] tracking-[0.05em] transition-colors inline-block whitespace-nowrap leading relaxed"
                       style={{
                         backgroundColor: theme === "dark" ? "#525252" : "#FFFFFF",
                         color: theme === "dark" ? "#FFFFFF" : "#000000",
@@ -68,7 +71,7 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* Link kısmı */}
-                <div className="flex justify-between text-xl font-semibold mb-6  md:mb-6 md:text-xl">
+                <div className="flex justify-between text-[20px] font-semibold mb-6  md:mb-6 md:text-xl">
                   <a 
                     href={project.githubUrl} 
                     target="_blank" 
