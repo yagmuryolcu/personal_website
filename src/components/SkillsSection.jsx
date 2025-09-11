@@ -13,12 +13,20 @@ const skillsData = data?.[language]?.skillsSection;
 
 
   const skillColors = [
+        "#ffffffff", // Java
     "#F7DF1E", // JavaScript - Sarı
-    "#0f0f0fee", // React - Koyu gri/siyah
+    "#ffffffff  ", // React - Koyu gri/siyah
     "#9864edff", // Redux - Mor
-    "#000000ff", // Node - Yeşil
+    "#ffffffff", // PHP
     "#1689d6ff", // VS Code - Mavi
-    "#000000ff"  // Figma - Siyah
+    "#000000ff" , // Figma - Siyah
+    "#000000ff ", //tailwind Koyu gri/siyah
+    "#ffffffff", // Postman
+    "#3ea5eaff", // sql
+    "#763891 ", //c#
+    "#ffffffff", // Python
+
+
   ];
 
   return (
@@ -46,7 +54,7 @@ const skillsData = data?.[language]?.skillsSection;
         </h2>
                       {/*  her skill için kart oluşturdum*/}
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-15">
           {skillsData.skills.map((skill, index) => (
             <div 
               key={index}

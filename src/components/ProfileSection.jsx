@@ -71,7 +71,7 @@ const ProfileSection = () => {
               ></div>
 
               <h3 
-                className="text-xl font-bold mb-6 pb-2"
+                className="text-xl font-bold mb-8 pb-2"
                 style={{
                   color: "#E91E63",
                   borderBottomColor: "#E91E63"
@@ -81,7 +81,7 @@ const ProfileSection = () => {
               </h3>
               
               {/* Basic Information Details */}
-              <div className="space-y-1">
+              <div className="space-y-3">
                 {profileData.basicInfo.fields.map((field, index) => (
                   <InfoRow 
                     key={index}
@@ -108,11 +108,11 @@ const ProfileSection = () => {
                   {profileData.aboutMe.title}
                 </h3>
               </div>
-              <div className="space-y-5 font-inter  font-normal">
+              <div className="space-y-2 font-inter  font-normal">
                 {profileData.aboutMe.paragraphs.map((paragraph, index) => (
                   <p
                     key={index}
-                    className="leading-relaxed text-[18px] text-left"
+                    className="leading-relaxed text-[15px] text-left"
                     style={{ color: theme === "dark" ? "#D9D9D9" : "#000000" }}
                   >
                     {paragraph}
