@@ -3,7 +3,7 @@ const data = {
     heroSection: {
       greeting: "Hi! 👋",
       intro: "I'm Yağmur. I'm a full-stack developer. I can craft solid and scalable frontend products. Let's meet!",
-      profileImage: "foto.png",
+      profileImage: "yağmur-fotoğraf.png",
       socials: [
         {
           logo: "logo-linkedin.png",
@@ -59,8 +59,8 @@ const data = {
       aboutMe: {
         title: "About me",
             paragraphs: [
-          "I am full-stack developer who is passionate about web development and enjoys growing with every new project. My academic background in Management Information Systems has given me both business and technology perspectives, which I aim to apply in all my software projects.",
-          "By completing the intensive WorkinTech full-stack program, I gained hands-on experience with modern frontend and backend technologies. ",
+          "I am full-stack developer who has an interest in web development and enjoys growing with every new project. My academic background in Management Information Systems has given me both business and technology perspectives, which I aim to apply in all my software projects.",
+          "By participating the intensive WorkinTech full-stack program, I am gaining hands-on experience with modern frontend and backend technologies. ",
           "Beyond development, I am also deeply interested in cybersecurity and continuously work to expand my knowledge in this field. My goal is to build web applications that are user-friendly, secure, and deliver real value." ,
            
         ]}
@@ -76,7 +76,7 @@ const data = {
           technologies: ["php", "css", "javasript"],
           githubLink: "View on GitHub",
           githubUrl: "https://github.com/yagmuryolcu/final_project",
-          appUrl:"https://www.figma.com",
+          appUrl:"https://replit.com/@yagmuryolcu12/CyberAnalyze",
           demoLink: "Go to app ⟶ ",
           image: "bitirme-projem.png"
         },
@@ -88,7 +88,7 @@ const data = {
           githubLink: "View on GitHub",
           githubUrl: "https://github.com/yagmuryolcu/ReactPizzaProject",
           demoLink: "Go to app ⟶ ",      
-           appUrl:"https://www.figma.com",
+           appUrl:"https://react-pizza-project-yagmur.vercel.app/",
 
           image: "pizza-projem.png"
         }
@@ -98,7 +98,7 @@ const data = {
       title: "Let's work together on your next product.",
       socialLinks: [
         { name: "Github", url: "https://github.com/yagmuryolcu", type: "social" },
-        { name: "Personal Blog", url: "https://www.figma.com", type: "blog" },
+        { name: "Personal Blog", url: "https://personal-website-gold-pi-38.vercel.app/", type: "blog" },
         { name: "Linkedin", url: "https://www.linkedin.com/in/ya%C4%9Fmur-sude-yolcu-a229722b9/", type: "social" },
         { name: "Email", url: "mailto:yagmur_yolcu_12@hotmail.com", type: "contact" }
       ]
@@ -109,7 +109,7 @@ const data = {
     heroSection: {
       greeting: "Merhaba! 👋",
       intro: "Ben Yağmur. Full-stack developer'ım. Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim. Tanışalım!",
-      profileImage: "foto.png",
+      profileImage: "yağmur-fotoğraf.png",
       socials: [
         { logo: "logo-linkedin.png", alt_text: "linkedin", link: "https://www.linkedin.com/in/ya%C4%9Fmur-sude-yolcu-a229722b9/" },
         { logo: "logo-github.png", alt_text: "github", link: "https://github.com/yagmuryolcu" }
@@ -144,19 +144,19 @@ const data = {
       basicInfo: {
         title: "Temel Bilgiler",
         fields: [
-          { label: "Doğum Tarihi", value: "24.03.1996" },
-          { label: "İkamet Şehri", value: "Ankara" },
-          { label: "Eğitim Durumu", value: "Hacettepe Üni Biyoloji Lisans, 2016" },
-          { label: "Tercih Ettiği Rol", value: "Frontend, UI" }
+          { label: "Doğum Tarihi", value: "20.09.2002" },
+          { label: "İkamet Şehri", value: "İstanbul / Tuzla" },
+          { label: "Eğitim Durumu", value: "Piri Reis Üniversitesi, YBS Lisans, 2025" },
+          { label: "Tercih Ettiği Rol", value: "Ön Yüz Geliştirici, Kullanıcı Deneyimi / Arayüz Tasarımcısı, Uçtan Uca Geliştirici" }
         ]
       },
       aboutMe: {
         title: "Hakkımda",
          paragraphs: [
         
-          "Ben, web geliştirmeye tutkuyla bağlı olan ve her yeni projede kendini geliştirmekten keyif alan bir full-stack geliştiriciyim. Yönetim Bilişim Sistemleri alanındaki akademik geçmişim, bana hem iş hem de teknoloji perspektifi kazandırdı ve bunu tüm yazılım projelerimde uygulamayı hedefliyorum.",
+          "Ben, web geliştirmeye ilgi duyan ve her yeni projede kendini geliştirmekten keyif alan bir full-stack geliştiriciyim. Yönetim Bilişim Sistemleri alanındaki akademik geçmişim, bana hem iş hem de teknoloji perspektifi kazandırdı ve bunu tüm yazılım projelerimde uygulamayı hedefliyorum.",
 
-          "Yoğun WorkinTech full-stack programını tamamlayarak modern frontend ve backend teknolojilerinde pratik deneyim kazandım.",
+          "Yoğun WorkinTech full-stack programına devam ederek modern frontend ve backend teknolojileriyle uygulamalı deneyim elde ediyorum.",
 
           "Geliştirmenin ötesinde, siber güvenliğe de derin bir ilgim var ve bu alandaki bilgi birikimimi sürekli artırmaya devam ediyorum. Amacım, kullanıcı dostu, güvenli ve gerçek değer sağlayan web uygulamaları geliştirmek.",
 
@@ -171,11 +171,11 @@ const data = {
           id: 1,
           title: "Siber Güvenlik Farkındalık Aracı",
           description: "Bu siber güvenlik farkındalık web sitesi PHP kullanılarak geliştirilmiş olup XAMPP üzerinde yerel olarak çalışmaktadır. Kullanıcıların e-postalarının ihlal edilip edilmediğini kontrol etmelerini sağlayan bir API entegrasyonu içermektedir; ayrıca güçlü şifreler oluşturma ve mevcut şifreleri test etme ile videolar ve interaktif quizler gibi eğitim içeriklerine erişim imkanı sunar. Güvenlik önlemleri arasında SQL injection’ı önlemek için prepared statement kullanımı ve XSS saldırılarına karşı giriş doğrulama yer almaktadır.",
-          technologies: ["react", "vercel", "axios", "router"],
+          technologies:  ["php", "css", "javasript"],
           githubLink: "GitHub'da Görüntüle",
           githubUrl: "https://github.com/yagmuryolcu/final_project",
           demoLink: "Uygulamaya git ⟶ ",
-          appUrl:"https://www.figma.com",
+          appUrl:"https://replit.com/@yagmuryolcu12/CyberAnalyze",
           image: "bitirme-projem.png"
         },
         {
@@ -186,7 +186,7 @@ const data = {
           githubLink: "GitHub'da Görüntüle",
           githubUrl: "https://github.com/yagmuryolcu/ReactPizzaProject",
           demoLink: "Uygulamaya git ⟶ ",
-          appUrl:"https://www.figma.com",
+          appUrl:"https://react-pizza-project-yagmur.vercel.app/",
 
           image: "pizza-projem.png"
         }
@@ -196,7 +196,7 @@ const data = {
       title: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
       socialLinks: [
         { name: "Github", url: "https://github.com/yagmuryolcu", type: "social" },
-        { name: "Kişisel Blog", url: "https://www.figma.com", type: "blog" },
+        { name: "Kişisel Blog", url: "https://personal-website-gold-pi-38.vercel.app/", type: "blog" },
         { name: "Linkedin", url: "https://www.linkedin.com/in/ya%C4%9Fmur-sude-yolcu-a229722b9/", type: "social" },
         { name: "Email", url: "mailto:yagmur_yolcu_12@hotmail.com", type: "contact" }
       ]

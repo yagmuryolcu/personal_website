@@ -110,7 +110,7 @@ return (
               <img
                 src={new URL(`../assets/${heroData.profileImage}`, import.meta.url).href}
                 alt="profile"
-                className="relative -top-1 -bottom-2 z-10 w-48 md:w-72 h-56 md:h-80 object-cover rounded-3xl shadow-2xl transform transition-transform duration-300"
+                className="relative -top-1 -bottom-2 z-10 w-48 md:w-72 h-56 md:h-80 object-cover rounded-3xl shadow-2xl transform transition-transform duration-300 hover:scale-105"
                 style={{
                   boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
                 }}
